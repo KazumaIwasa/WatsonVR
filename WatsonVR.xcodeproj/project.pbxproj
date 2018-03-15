@@ -1,0 +1,608 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8A46585C205A84410061A4E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A46585B205A84410061A4E8 /* AppDelegate.swift */; };
+		8A465863205A84410061A4E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A465862205A84410061A4E8 /* Assets.xcassets */; };
+		8A465871205A84410061A4E8 /* WatsonVRTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A465870205A84410061A4E8 /* WatsonVRTests.swift */; };
+		8A46587C205A84410061A4E8 /* WatsonVRUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A46587B205A84410061A4E8 /* WatsonVRUITests.swift */; };
+		8A46588A205A84C70061A4E8 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A465889205A84C70061A4E8 /* MainViewController.swift */; };
+		8A46588C205A85000061A4E8 /* SubTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A46588B205A85000061A4E8 /* SubTableViewController.swift */; };
+		8A46588E205A85260061A4E8 /* ResultTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A46588D205A85260061A4E8 /* ResultTableViewController.swift */; };
+		8A465891205A85510061A4E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A46588F205A85500061A4E8 /* Main.storyboard */; };
+		8A465894205A855E0061A4E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A465892205A855E0061A4E8 /* LaunchScreen.storyboard */; };
+		8A465897205A87BF0061A4E8 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A465896205A87BF0061A4E8 /* SwiftyJSON.framework */; };
+		8A46589A205A8BC30061A4E8 /* SwiftyJSON.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8A465896205A87BF0061A4E8 /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8A46586D205A84410061A4E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8A465850205A84410061A4E8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8A465857205A84410061A4E8;
+			remoteInfo = WatsonVR;
+		};
+		8A465878205A84410061A4E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8A465850205A84410061A4E8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8A465857205A84410061A4E8;
+			remoteInfo = WatsonVR;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8A465898205A8B7D0061A4E8 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				8A46589A205A8BC30061A4E8 /* SwiftyJSON.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		8A465858205A84410061A4E8 /* WatsonVR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatsonVR.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A46585B205A84410061A4E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8A465862205A84410061A4E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8A465867205A84410061A4E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A46586C205A84410061A4E8 /* WatsonVRTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WatsonVRTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A465870205A84410061A4E8 /* WatsonVRTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatsonVRTests.swift; sourceTree = "<group>"; };
+		8A465872205A84410061A4E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A465877205A84410061A4E8 /* WatsonVRUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WatsonVRUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A46587B205A84410061A4E8 /* WatsonVRUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatsonVRUITests.swift; sourceTree = "<group>"; };
+		8A46587D205A84410061A4E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A465889205A84C70061A4E8 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		8A46588B205A85000061A4E8 /* SubTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubTableViewController.swift; sourceTree = "<group>"; };
+		8A46588D205A85260061A4E8 /* ResultTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultTableViewController.swift; sourceTree = "<group>"; };
+		8A465890205A85500061A4E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "../../WatsonVR-DetectFaces-master/WatsonVR/Base.lproj/Main.storyboard"; sourceTree = "<group>"; };
+		8A465893205A855E0061A4E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "../../WatsonVR-DetectFaces-master/WatsonVR/Base.lproj/LaunchScreen.storyboard"; sourceTree = "<group>"; };
+		8A465896205A87BF0061A4E8 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8A465855205A84410061A4E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A465897205A87BF0061A4E8 /* SwiftyJSON.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A465869205A84410061A4E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A465874205A84410061A4E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8A46584F205A84410061A4E8 = {
+			isa = PBXGroup;
+			children = (
+				8A46585A205A84410061A4E8 /* WatsonVR */,
+				8A46586F205A84410061A4E8 /* WatsonVRTests */,
+				8A46587A205A84410061A4E8 /* WatsonVRUITests */,
+				8A465859205A84410061A4E8 /* Products */,
+				8A465895205A87BF0061A4E8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8A465859205A84410061A4E8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8A465858205A84410061A4E8 /* WatsonVR.app */,
+				8A46586C205A84410061A4E8 /* WatsonVRTests.xctest */,
+				8A465877205A84410061A4E8 /* WatsonVRUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8A46585A205A84410061A4E8 /* WatsonVR */ = {
+			isa = PBXGroup;
+			children = (
+				8A46585B205A84410061A4E8 /* AppDelegate.swift */,
+				8A46588F205A85500061A4E8 /* Main.storyboard */,
+				8A465892205A855E0061A4E8 /* LaunchScreen.storyboard */,
+				8A465862205A84410061A4E8 /* Assets.xcassets */,
+				8A465867205A84410061A4E8 /* Info.plist */,
+				8A465889205A84C70061A4E8 /* MainViewController.swift */,
+				8A46588B205A85000061A4E8 /* SubTableViewController.swift */,
+				8A46588D205A85260061A4E8 /* ResultTableViewController.swift */,
+			);
+			path = WatsonVR;
+			sourceTree = "<group>";
+		};
+		8A46586F205A84410061A4E8 /* WatsonVRTests */ = {
+			isa = PBXGroup;
+			children = (
+				8A465870205A84410061A4E8 /* WatsonVRTests.swift */,
+				8A465872205A84410061A4E8 /* Info.plist */,
+			);
+			path = WatsonVRTests;
+			sourceTree = "<group>";
+		};
+		8A46587A205A84410061A4E8 /* WatsonVRUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8A46587B205A84410061A4E8 /* WatsonVRUITests.swift */,
+				8A46587D205A84410061A4E8 /* Info.plist */,
+			);
+			path = WatsonVRUITests;
+			sourceTree = "<group>";
+		};
+		8A465895205A87BF0061A4E8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8A465896205A87BF0061A4E8 /* SwiftyJSON.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8A465857205A84410061A4E8 /* WatsonVR */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A465880205A84410061A4E8 /* Build configuration list for PBXNativeTarget "WatsonVR" */;
+			buildPhases = (
+				8A465854205A84410061A4E8 /* Sources */,
+				8A465855205A84410061A4E8 /* Frameworks */,
+				8A465856205A84410061A4E8 /* Resources */,
+				8A465898205A8B7D0061A4E8 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WatsonVR;
+			productName = WatsonVR;
+			productReference = 8A465858205A84410061A4E8 /* WatsonVR.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8A46586B205A84410061A4E8 /* WatsonVRTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A465883205A84410061A4E8 /* Build configuration list for PBXNativeTarget "WatsonVRTests" */;
+			buildPhases = (
+				8A465868205A84410061A4E8 /* Sources */,
+				8A465869205A84410061A4E8 /* Frameworks */,
+				8A46586A205A84410061A4E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8A46586E205A84410061A4E8 /* PBXTargetDependency */,
+			);
+			name = WatsonVRTests;
+			productName = WatsonVRTests;
+			productReference = 8A46586C205A84410061A4E8 /* WatsonVRTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8A465876205A84410061A4E8 /* WatsonVRUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A465886205A84410061A4E8 /* Build configuration list for PBXNativeTarget "WatsonVRUITests" */;
+			buildPhases = (
+				8A465873205A84410061A4E8 /* Sources */,
+				8A465874205A84410061A4E8 /* Frameworks */,
+				8A465875205A84410061A4E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8A465879205A84410061A4E8 /* PBXTargetDependency */,
+			);
+			name = WatsonVRUITests;
+			productName = WatsonVRUITests;
+			productReference = 8A465877205A84410061A4E8 /* WatsonVRUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8A465850205A84410061A4E8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "岩佐和真";
+				TargetAttributes = {
+					8A465857205A84410061A4E8 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					8A46586B205A84410061A4E8 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 8A465857205A84410061A4E8;
+					};
+					8A465876205A84410061A4E8 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 8A465857205A84410061A4E8;
+					};
+				};
+			};
+			buildConfigurationList = 8A465853205A84410061A4E8 /* Build configuration list for PBXProject "WatsonVR" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8A46584F205A84410061A4E8;
+			productRefGroup = 8A465859205A84410061A4E8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8A465857205A84410061A4E8 /* WatsonVR */,
+				8A46586B205A84410061A4E8 /* WatsonVRTests */,
+				8A465876205A84410061A4E8 /* WatsonVRUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8A465856205A84410061A4E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A465894205A855E0061A4E8 /* LaunchScreen.storyboard in Resources */,
+				8A465891205A85510061A4E8 /* Main.storyboard in Resources */,
+				8A465863205A84410061A4E8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A46586A205A84410061A4E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A465875205A84410061A4E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8A465854205A84410061A4E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A46588E205A85260061A4E8 /* ResultTableViewController.swift in Sources */,
+				8A46588A205A84C70061A4E8 /* MainViewController.swift in Sources */,
+				8A46588C205A85000061A4E8 /* SubTableViewController.swift in Sources */,
+				8A46585C205A84410061A4E8 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A465868205A84410061A4E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A465871205A84410061A4E8 /* WatsonVRTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A465873205A84410061A4E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A46587C205A84410061A4E8 /* WatsonVRUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8A46586E205A84410061A4E8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8A465857205A84410061A4E8 /* WatsonVR */;
+			targetProxy = 8A46586D205A84410061A4E8 /* PBXContainerItemProxy */;
+		};
+		8A465879205A84410061A4E8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8A465857205A84410061A4E8 /* WatsonVR */;
+			targetProxy = 8A465878205A84410061A4E8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8A46588F205A85500061A4E8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8A465890205A85500061A4E8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8A465892205A855E0061A4E8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8A465893205A855E0061A4E8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8A46587E205A84410061A4E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8A46587F205A84410061A4E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8A465881205A84410061A4E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SSWYYJA3XC;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = WatsonVR/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/../Frameworks/";
+				PRODUCT_BUNDLE_IDENTIFIER = iws.WatsonVR;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8A465882205A84410061A4E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SSWYYJA3XC;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = WatsonVR/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/../Frameworks/";
+				PRODUCT_BUNDLE_IDENTIFIER = iws.WatsonVR;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8A465884205A84410061A4E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SSWYYJA3XC;
+				INFOPLIST_FILE = WatsonVRTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = iws.WatsonVRTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WatsonVR.app/WatsonVR";
+			};
+			name = Debug;
+		};
+		8A465885205A84410061A4E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SSWYYJA3XC;
+				INFOPLIST_FILE = WatsonVRTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = iws.WatsonVRTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WatsonVR.app/WatsonVR";
+			};
+			name = Release;
+		};
+		8A465887205A84410061A4E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SSWYYJA3XC;
+				INFOPLIST_FILE = WatsonVRUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = iws.WatsonVRUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WatsonVR;
+			};
+			name = Debug;
+		};
+		8A465888205A84410061A4E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SSWYYJA3XC;
+				INFOPLIST_FILE = WatsonVRUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = iws.WatsonVRUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WatsonVR;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8A465853205A84410061A4E8 /* Build configuration list for PBXProject "WatsonVR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A46587E205A84410061A4E8 /* Debug */,
+				8A46587F205A84410061A4E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A465880205A84410061A4E8 /* Build configuration list for PBXNativeTarget "WatsonVR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A465881205A84410061A4E8 /* Debug */,
+				8A465882205A84410061A4E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A465883205A84410061A4E8 /* Build configuration list for PBXNativeTarget "WatsonVRTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A465884205A84410061A4E8 /* Debug */,
+				8A465885205A84410061A4E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A465886205A84410061A4E8 /* Build configuration list for PBXNativeTarget "WatsonVRUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A465887205A84410061A4E8 /* Debug */,
+				8A465888205A84410061A4E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8A465850205A84410061A4E8 /* Project object */;
+}
